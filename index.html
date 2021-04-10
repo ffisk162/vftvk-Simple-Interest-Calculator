@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+<! -- Point to the javascript, css, and name the tab title -->
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 	<title>Simple Interest Calculator</title>
     </head>
     <body>
+<! -- define a maindiv class so it can be moved and centered by css -->
 		<div class="maindiv">
 			<h1>Simple Interest Calculator</h1>
+<! -- define a table so the name fields and input fields line up nicely -->
 			<table>
 				<tr>
 					<td>Amount</td>
-					<td><input type="number"  id="principal" min="1" value="0"></td>
+<! -- define the principal field to be a number and set initial value to zero -->
+					<td><input type="number"  id="principal" value="0"></td>
 				</tr>
 				<tr>
 					<td>Interest Rate</td>
+<! -- define a range input field, add an onchange event to call js to update the field to the right of the range with the value selected -->
 					<td><input type="range" name="rate" min="1" max="20" step="0.25" value="10.25" id="rate" onchange="updateSlider(this.value)"><span id="sliderAmount">10.25%</span></td>
 				</tr>
 				<tr>
@@ -34,6 +39,7 @@
 				</tr>
 			</table>
 			<br/>
+<! -- define a button to call the compute js function and place results after the "result" id -->
             <button onclick="compute()">Compute Interest</button><span id="result"></span><br/>
 			<footer>©Everyone Can Get Rich</footer> 
 		</div>

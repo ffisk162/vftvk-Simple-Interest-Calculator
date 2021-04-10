@@ -1,5 +1,7 @@
+/* colors and fonts as per contraints given */
 body {background-color:black;font:arial;font-color:white}
 h1{color:grey;font:verdana}
+/* center the frame and adjust color and fonts as per constraints and the picture given of final results to-be */
 .maindiv {
   background-color: white;font:black;width:300;padding: 20px;border-radius: 25px;
   margin: auto;
